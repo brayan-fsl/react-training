@@ -13,18 +13,12 @@
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
-    "@babel/preset-env": "^7.11.5",
-    "@babel/preset-react": "^7.10.4",
-    "@material/button": "^7.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^8.1.0",
-    "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.23.0",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
+    "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.5.2",
     "css-loader": "0.28.4",
+    "ember-cli-babel": "^7.22.1",
     "enzyme-adapter-react-16": "^1.15.4",
     "express": "4.15.4",
     "extract-text-webpack-plugin": "3.0.0",
@@ -50,20 +44,24 @@
     "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
     "uuid": "3.1.0",
-    "validator": "8.0.0",
-    "webpack": "3.1.0"
+    "validator": "8.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "babel-jest": "^26.3.0",
+    "babel-loader": "^8.1.0",
     "cross-env": "5.0.5",
     "dotenv": "4.0.0",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "3.5.0",
     "jest": "^26.4.2",
     "react-test-renderer": "15.6.1",
+    "webpack": "^3.1.0",
     "webpack-dev-server": "2.5.1"
   }
 }

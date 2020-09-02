@@ -1,7 +1,7 @@
 import React from 'react';
 import Skeleton from "react-loading-skeleton";
 
-const SkeletonPost = () => {
+const PostsSkeleton = () => {
     return (
       <section className="posts-skeleton">
         <ul className="posts-skeleton__list">
@@ -20,4 +20,4 @@ const SkeletonPost = () => {
     )
   }
 
-  export default SkeletonPost;
+  export default PostsSkeleton;
