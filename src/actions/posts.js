@@ -47,7 +47,7 @@ export const updatePost = (post) => {
   return async dispatch => {
     dispatch({type: UPDATE_POST_REQUEST, payload: post})
     try {
-      const response = await update(post)  
+      const response = await update(post)
       dispatch({type: UPDATE_POST_SUCCESS, payload: response})
     } catch (error) {
       dispatch({type: UPDATE_POST_ERROR, payload: error})

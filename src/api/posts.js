@@ -25,7 +25,7 @@ export const find = (id) => {
 export const update = ({id, title, body}) => {
   const url = `https://jsonplaceholder.typicode.com/posts/${id}`
   const method = 'PUT'
-  const response = performRequest({method, data: {title, body}})
+  const response = performRequest({url, method, data: {title, body}})
   return response
 }
 

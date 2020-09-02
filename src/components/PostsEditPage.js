@@ -16,8 +16,9 @@ const PostsEditPage = ({history}) => {
   }, [id])
 
   const onSubmit = (post) => {
-    dispatch(updatePost(post))
-    history.push('/posts')
+    dispatch(updatePost({...post, id})).then(() => {
+      history.push('/posts')
+    })
   }
 
   const formContent = <PostForm post={post} onSubmit={onSubmit}/>

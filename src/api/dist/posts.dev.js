@@ -85,6 +85,7 @@ var update = function update(_ref2) {
   var url = "https://jsonplaceholder.typicode.com/posts/".concat(id);
   var method = 'PUT';
   var response = performRequest({
+    url: url,
     method: method,
     data: {
       title: title,
